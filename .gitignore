@@ -18,3 +18,8 @@ develop-eggs
 
 test/korail_idpw.txt
 .idea
+# 민감 정보 파일 무시
+.env
+local.properties
+secret.properties
+
