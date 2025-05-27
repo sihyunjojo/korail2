@@ -860,7 +860,8 @@ There are 4 types of Passengers now, AdultPassenger, ChildPassenger, ToddlerPass
             trains = list(filter(lambda x: any(f(x) for f in filter_fns), trains))
 
             if len(trains) == 0:
-                raise NoResultsError()
+                # raise NoResultsError()
+                return []  # 대신 빈 리스트를 반환하도록 변경합니다.
 
             return trains
 
